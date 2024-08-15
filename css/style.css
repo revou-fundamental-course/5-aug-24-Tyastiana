@@ -1,0 +1,160 @@
+/* Gaya Global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D1E9F6; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Gaya Container */
+.container {
+    background-color: #7FA1C3;
+    width: 100%; /* Lebar penuh viewport */
+    max-width: 800px; /* Lebar maksimum container */
+    margin: 50px auto; /* Menempatkan container di tengah dan menambahkan jarak vertikal */
+    padding: 20px; /* Menambahkan padding di dalam container */
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Sudut yang melengkung */
+}
+
+/* Penataan teks header */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Gaya Teks Pengantar */
+.intro-text {
+    text-align: center;
+    margin-bottom: 20px; /* Menambahkan jarak bawah pada paragraf */
+    font-size: 16px; /* Menentukan ukuran font */
+    line-height: 1.5; /* Menambah jarak antar baris untuk keterbacaan */
+    color: #555;
+}
+
+/* Penataan Layout Konten */
+.content-wrapper {
+    display: flex; /* Menggunakan layout flexbox */
+    justify-content: space-between; /* Mendistibusikan ruang antara item */
+    gap: 20px; /* Menambahkan jarak antar item flex */
+}
+
+/* Gaya Formulir */
+form {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen formulir secara vertikal */
+    width: 45%; /* Lebar formulir */
+}
+
+/* Gaya Label */
+label {
+    margin-bottom: 8px; /* Menambahkan jarak bawah pada label */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+/* Gaya Input, Select, dan Button */
+input, select, button {
+    margin-bottom: 15px; /* Menambahkan jarak bawah pada elemen formulir */
+    padding: 8px;
+    border-radius: 5px; /* Sudut yang melengkung */
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Kelompok Tombol */
+.button-group {
+    display: flex; /* Menggunakan layout flexbox */
+    gap: 10px; /* Menambahkan jarak antar tombol */
+}
+
+/* Gaya Tombol */
+button {
+    padding: 10px; /* Menambahkan padding di dalam tombol */
+    border-radius: 5px; /* Sudut yang melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+    font-size: 14px; /* Menentukan ukuran font */
+}
+
+/* Gaya Tombol Submit */
+button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; /* Menghapus border */
+}
+
+/* Efek Hover untuk Tombol Submit */
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+/* Gaya Tombol Reset */
+button[type="reset"] {
+    background-color: #6c757d; 
+    color: #fff; 
+    border: none; /* Menghapus border */
+}
+
+/* Efek Hover untuk Tombol Reset */
+button[type="reset"]:hover {
+    background-color: #5a6268; 
+}
+
+/* Gaya Bagian Hasil */
+#result {
+    width: 45%; /* Menyesuaikan lebar dengan formulir */
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border-radius: 8px; /* Sudut yang melengkung */
+    display: none; /* Menyembunyikan bagian hasil secara default */
+    text-align: center; 
+}
+
+/* Gaya Nilai BMI */
+#bmiValue {
+    font-size: 28px; /* Ukuran font lebih besar untuk nilai BMI */
+    font-weight: bold; 
+    color: #007bff; 
+    text-align: center; 
+}
+
+/* Gaya Kategori BMI */
+#bmiCategory {
+    text-align: center; 
+    font-size: 18px; 
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    color: #007bff; 
+    margin-bottom: 10px; /* Menambahkan jarak bawah pada kategori */
+}
+
+/* Gaya Pengingat */
+.reminder {
+    margin-top: 20px; /* Menambahkan jarak atas pada pengingat */
+    padding: 15px; /* Menambahkan padding di dalam pengingat */
+    background-color: #ffcdcdab; 
+    color: #850404; 
+    border-radius: 5px; /* Sudut yang melengkung */
+    border: 1px solid #ffbaba; 
+    text-align: center;
+    font-size: 14px; 
+}
+
+/* Gaya Fitur */
+.features {
+    margin-top: 20px; 
+    padding: 20px; 
+    background-color: #e2e3e5;
+    border-radius: 5px; 
+    color: #383d41;
+}
+
+/* Gaya Daftar dalam Fitur */
+.features ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+/* Gaya Item Daftar dalam Fitur */
+.features ul li {
+    margin-bottom: 10px;
+}

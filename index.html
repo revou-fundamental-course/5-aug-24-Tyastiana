@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title> <!-- Judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file CSS eksternal untuk styling -->
+</head>
+<body>
+    <div class="container">
+        <!-- Judul utama halaman -->
+        <h1>Kalkulator BMI</h1>
+
+        <!-- Deskripsi singkat tentang kalkulator BMI -->
+        <p class="intro-text">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI!
+        </p>
+
+        <!-- Wrapper untuk form dan hasil perhitungan -->
+        <div class="content-wrapper">
+            <!-- Formulir untuk menghitung BMI -->
+            <form id="bmiForm">
+                <!-- Input untuk memilih jenis kelamin -->
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Laki-Laki</option>
+                    <option value="female">Wanita</option>
+                </select>
+
+                <!-- Input untuk usia -->
+                <label for="age">Usia:</label>
+                <input type="number" id="age" name="age" required>
+
+                <!-- Input untuk berat badan -->
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <!-- Input untuk tinggi badan -->
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <!-- Tombol untuk menghitung dan mereset form -->
+                <div class="button-group">
+                    <button type="submit">Hitung BMI</button>
+                    <button type="reset" id="resetButton">Reset</button>
+                </div>
+            </form>
+
+            <!-- Area untuk menampilkan hasil BMI setelah form disubmit -->
+            <div id="result" style="display:none;">
+                <h2>Hasil BMI:</h2>
+                <p id="bmiCategory"></p> <!-- Menampilkan kategori BMI -->
+                <p id="bmiCategoryDetail"></p> <!-- Menampilkan bagian kedua dari kategori -->
+                <p id="bmiValue"></p> <!-- Menampilkan nilai BMI -->
+                <p id="bmiExplanation"></p> <!-- Menampilkan penjelasan tentang kategori BMI -->
+                <p id="bmiAdvice"></p> <!-- Menampilkan saran berdasarkan kategori BMI -->
+            </div>
+        </div>
+
+        <!-- Reminder untuk konsultasi lebih lanjut mengenai BMI -->
+        <div class="reminder">
+            <p>
+                <strong>⚠️ Reminder:</strong> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan.
+            </p>
+        </div>
+
+        <!-- Informasi tentang BMI dan fitur aplikasi -->
+        <div class="features">
+            <h3>Apa itu BMI?</h3>
+            <p>
+                <strong>Indeks Massa Tubuh (BMI)</strong> adalah metode yang digunakan untuk menilai apakah berat badan seseorang proporsional dengan tinggi badan mereka. Ini dihitung dengan membagi berat badan Anda (dalam kilogram) dengan kuadrat tinggi badan Anda (dalam meter).
+            </p>
+            <h4>Kategori BMI:</h4>
+            <ol>
+                <li>Kekurangan Berat Badan: BMI kurang dari 18.5. Bisa menandakan kurangnya asupan nutrisi atau masalah kesehatan.</li>
+                <li>Berat Badan Normal: BMI antara 18.5 dan 24.9. Menunjukkan proporsi berat badan yang sehat.</li>
+                <li>Kelebihan Berat Badan: BMI antara 25 dan 29.9. Dapat meningkatkan risiko masalah kesehatan seperti diabetes tipe 2.</li>
+                <li>Obesitas: BMI 30 atau lebih. Meningkatkan risiko masalah kesehatan serius.</li>
+            </ol>
+
+            <ul>
+                <li>
+                    Kelebihan: Mudah dihitung dan digunakan tanpa peralatan khusus.
+                </li>
+                <li>Keterbatasan: Tidak membedakan antara massa otot dan lemak, serta tidak memperhitungkan distribusi lemak tubuh atau faktor genetik.</li>
+            
+            </ul>
+            <p>
+                <strong>Di aplikasi ini, Anda dapat:</strong>
+                <ul>
+                    <li>Masukkan informasi pribadi seperti jenis kelamin, usia, berat badan, dan tinggi badan.</li>
+                    <li>Hitung BMI Anda secara otomatis dengan menekan tombol "Hitung BMI".</li>
+                    <li>Lihat hasil BMI Anda dan kategori berat badan Anda.</li>
+                    <li>Dapatkan penjelasan dan saran berdasarkan hasil BMI Anda.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <!-- Menghubungkan file JavaScript eksternal untuk fungsionalitas interaktif -->
+    <script src="js/script.js"></script>
+</body>
+</html>
